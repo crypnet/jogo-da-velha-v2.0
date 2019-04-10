@@ -5,19 +5,31 @@ var placarx =0;
 var placaro=0;
 
 function cor(){
-if(ig == 1){
+if(ig == 0){
     var x = document.getElementById("bolinha")
     var y = document.getElementById("xx")
     x.className ="cfy";
     y.className = "cfo";
 }
-if(ig == 0){
+if(ig == 1){
     var x = document.getElementById("bolinha")
     var y = document.getElementById("xx")
     x.className ="cfo";
     y.className = "cfy";
 }
 }
+function ini(n1){
+ig = n1;
+}
+function newgj(){
+    velha =[[10,10,10],[10,10,10],[10,10,10]];
+    cls ="";
+    placarx =0;
+    placaro=0;
+    placar();
+    cor()
+    document.getElementById("maskinicial").style.display="none";
+    }
 
 function insertmatr(cod1,cod2){
     cor();
@@ -166,6 +178,7 @@ if(cod1 == 2 && cod2 == 2){
     
      }
 }
+console.log(velha)
 ver();
 }
 
@@ -182,14 +195,7 @@ function placar(){
     document.getElementById("mascak").style.display="none";  
 }
 function newg(){
-velha =[[10,10,10],[10,10,10],[10,10,10]];
-ig = 1;
-cls ="";
-placarx =0;
-placaro=0;
-placar();
-cor()
-
+    document.getElementById("maskinicial").style.display="flex";
 }
 
 function ver(){
@@ -235,7 +241,6 @@ function ver(){
             }
         }
     }
-
 }
 function troca(btn){
 if(btn ==1){

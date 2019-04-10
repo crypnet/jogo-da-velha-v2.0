@@ -6,22 +6,22 @@
 body{
     background-color: #ccccdd;
 }
+
 #mae{
-    background-color: black;
+    margin-left: 5%;
 }
 .m1{
-    margin-left: 30%;
     display: flex;
-    width: 70%;
+    width: 100%;
     height: 100%;
     float: left;
 }
 .block{
-width: 170px;
-height: 170px;
-  display: inline-block;
-  border-style: solid;
-  border-width: 5px;
+    width: 130px;
+    height: 150px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 5px;
 
 }
 .imgx{
@@ -36,13 +36,32 @@ height: 170px;
     background-repeat: no-repeat;
     background-size: 120px 120px; 
 }
-#mascak{   
-    display: none;                       
+.boli{
+    width: 100%;
+    height: 100%;
+}
+.boli:last-child{
+    display: inline-block;
+}
+#mascak{  
+    display: none;                  
+    width: 100%;
+    height: 87.7%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#maskinicial{   
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;   
+    justify-items: center;                 
     width: 100%;
     height: 89.3%;
     position: absolute;
     background-color: rgba(0,0,0,0.7);
-} 
+}
 
 #placarm{
     width: 100%;
@@ -61,7 +80,7 @@ height: 170px;
 .tst{
     margin: 0% 1% 0% 1%;
     font-size: 30px;
-    color: white;
+    color: #ffffff;
 }
 .cfo{
     font-size: 30px;
@@ -69,17 +88,17 @@ height: 170px;
 }
 .cfy{
     font-size: 30px;
-    color: white;
+    color: #ffffff;
 }
 .placaro input{
-    color:white;
+    color:#ffffff;
     font-size: 30px;
     width: 20px;
     background: transparent;
     border: none;
 }
 .placaro input::placeholder{
-    color: white;
+    color: #ffffff;
 }
 .floar{
     text-align: right; 
@@ -87,7 +106,7 @@ height: 170px;
 
 #newgame{
     margin-top: 1.5%;
-    color:white;
+    color:#ffffff;
     width: 20%;
     font-size: 20px;
     background: transparent;
@@ -110,37 +129,60 @@ height: 170px;
         border-left-style: none;
 }
 .velha{
-    width: 30%;
+    width: 85%;
     height: 100%;
     position: absolute;
-    background-image: url("../img/velha.png");
+    background-image: url("../img/vei.gif");
+    background-size: 450px 400px;
     background-repeat: no-repeat;
 }
 .xv{
-    width: 15%;
+    width: 55%;
     height: 100%;
     position: absolute;
     background-image: url("../img/xv.png");
     background-repeat: no-repeat;
 }
 .ov{
-    width: 15%;
+    width: 55%;
     height: 100%;
     position: absolute;
     background-image: url("../img/ov.png");
     background-repeat: no-repeat;
 }
 #jn{
-    margin-top: 17%;
+    margin-left: -17%;
+    margin-top: 55%;
+    position: relative;
+    width: 100%;
+    height: 10%;
+    color:#ffffff;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+}
+#jn1{
+    margin-top: 15;
     position: relative;
     width: 100%;
     height: 60%;
-    color:white;
+    color:#ffffff;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+}
+#jn1b{
+    margin-top: 15;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color:#ffffff;
     font-size: 20px;
     background: transparent;
     border: none;
 }
 .ma{
+    
     width: 100%;
     height: 100%;
     display: flex;
@@ -154,7 +196,7 @@ height: 170px;
     position: relative;
     width: 10%;
     height: 10%;
-    color:white;
+    color:#ffffff;
     font-size: 20px;
     background: transparent;
     border: none;
@@ -164,9 +206,70 @@ height: 170px;
     position: relative;
     width:5%;
     height:5%;
-    color:white;
+    color:#ffffff;
     font-size: 20px;
     background: transparent;
     border: none;
 
+}
+@media (min-width: 768px) { 
+    .ma{
+        height: 50%;
+    }
+    #jn{
+        margin-left: -8%;
+        margin-top: 32%;
+    }
+    .velha{
+        margin-top: 16%;
+        margin-left: 27%;
+        width: 100%;
+        height: 100%;
+    }
+    .xv{
+        margin-top: 16%;
+        margin-left: 37%;
+        width: 100%;
+        height: 100%;
+    }
+    .ov{
+        margin-top: 16%;
+        margin-left: 37%;
+        width: 100%;
+        height: 100%;
+    }
+    #mae{
+        margin-left: 28%;
+    }
+ }
+
+@media (min-width: 1200px) {  
+    #mascak{                    
+        height: 89.3%;
+    }
+    .ma{
+        position: absolute;
+        height: 100%;
+        width: 50%;
+    }
+    #jn{
+        margin-left: 85%;
+    }
+    .velha{
+        margin-top: -18%;
+        margin-left: 70%;
+        width: 100%;
+        height: 70%;
+    }
+    .xv{
+        margin-top: -10%;
+        margin-left: 85%;
+    }
+    .ov{
+        margin-top: -10%;
+        margin-left: 85%;
+    }
+    #mae{
+        margin-left: 34%;
+    }
 }
