@@ -203,29 +203,29 @@ function ver(){
     if(velha[0][0]+velha[0][1]+velha[0][2] == 3 || velha[1][0]+velha[1][1]+velha[1][2] == 3|| velha[2][0]+velha[2][1]+velha[2][2] == 3){
         placaro++;
         document.getElementById("masc").className = "ov";
-        document.getElementById("mascak").style.display="block";
+        document.getElementById("mascak").style.display="block"; 
     }
-    if(velha[0][0]+velha[0][1]+velha[0][2] == 0 || velha[1][0]+velha[1][1]+velha[1][2] == 0|| velha[2][0]+velha[2][1]+velha[2][2] == 0){
+    else if(velha[0][0]+velha[0][1]+velha[0][2] == 0 || velha[1][0]+velha[1][1]+velha[1][2] == 0|| velha[2][0]+velha[2][1]+velha[2][2] == 0){
         placarx++;
         document.getElementById("masc").className = "xv";
         document.getElementById("mascak").style.display="block";
     }
-    if(velha[0][0]+velha[1][0]+velha[2][0] == 3 || velha[0][1]+velha[1][1]+velha[2][1] == 3|| velha[0][2]+velha[1][2]+velha[2][2] == 3){
+    else if(velha[0][0]+velha[1][0]+velha[2][0] == 3 || velha[0][1]+velha[1][1]+velha[2][1] == 3|| velha[0][2]+velha[1][2]+velha[2][2] == 3){
         placaro++;
         document.getElementById("masc").className = "ov";
         document.getElementById("mascak").style.display="block";
     }
-    if(velha[0][0]+velha[1][0]+velha[2][0] == 0 || velha[0][1]+velha[1][1]+velha[2][1] == 0|| velha[0][2]+velha[1][2]+velha[2][2] == 0){
+    else if(velha[0][0]+velha[1][0]+velha[2][0] == 0 || velha[0][1]+velha[1][1]+velha[2][1] == 0|| velha[0][2]+velha[1][2]+velha[2][2] == 0){
         placarx++;
         document.getElementById("masc").className = "xv";
         document.getElementById("mascak").style.display="block";
     }
-    if(velha[0][0]+velha[1][1]+velha[2][2] == 3 || velha[0][2]+velha[1][1]+velha[2][0] == 3){
+    else if(velha[0][0]+velha[1][1]+velha[2][2] == 3 || velha[0][2]+velha[1][1]+velha[2][0] == 3){
         placaro++;
         document.getElementById("masc").className = "ov";
         document.getElementById("mascak").style.display="block";
     }
-    if(velha[0][0]+velha[1][1]+velha[2][2] == 0 || velha[0][2]+velha[1][1]+velha[2][0] == 0){
+    else if(velha[0][0]+velha[1][1]+velha[2][2] == 0 || velha[0][2]+velha[1][1]+velha[2][0] == 0){
         placarx++;
         document.getElementById("masc").className = "xv";
         document.getElementById("mascak").style.display="block";
